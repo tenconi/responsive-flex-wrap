@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="tenco | Daniel Tenconi">
+    <title>Reponsive Flex Wrap</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+          <a href="https://tenco.com.ar/" target="_blank"><img src="https://tenco.com.ar/static/media/tenco_logo_light.7ce41bedf5039967ad9dd15ddc1e811d.svg"  alt="tenco" class="brand" /> <p><em>by Daniel Tenconi</em></p></a>          
+        </header>
+
+        <h2 class="title">Reponsive <em>Flex Wrap</em> :</h2>
+        <p class="description">In this example, we can see how the items are resized when the screen size is reduced.</p>
+
+        <div class="result">
+
+            <div class="col" id="show">
+                <h3 class="result__title">Results:</h3>
+                <div class="content-box">
+                    <div class="item">Item 1</div>
+                    <div class="item">Item 2 </div>
+                    <div class="item">Item 3</div>
+                    <div class="item">Item 4</div>
+
+                </div>
+            </div>
+
+            <div class="col" id="code">
+                <h3 class="result__title">Code:</h3>
+                <samp>
+                    <code>
+                        .content-box{<br>
+                            <span class="green">display: flex;<br>
+                            flex-wrap: wrap;</span><br>
+                        }<br><br>
+                        .item{<br>
+                            <span class="green">flex: 1 1 150px;</span>
+                            <span class="coment">/* we define → grow; shrink; basis */</span><br>
+                        }
+                    </code>
+                </samp>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
